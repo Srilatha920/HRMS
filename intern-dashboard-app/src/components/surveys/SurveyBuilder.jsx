@@ -232,14 +232,16 @@ const SurveyBuilder = ({ targetGroup = "employees", onSave }) => {
         {suggestions.length > 0 && (
           <div className="suggestion-list">
             {suggestions.map((s, i) => (
-              <div 
+              <Button 
                 key={i} 
+                variant="ghost"
                 className="suggestion-chip" 
+                style={{ width: "100%", justifyContent: "flex-start", textAlign: "left", display: "flex" }}
                 onClick={() => setQuestions((qs) => [...qs, { id: Date.now() + i, type: "text", label: s }])}
               >
                 <span style={{ marginRight: 6 }}>＋</span>
                 <span>{s}</span>
-              </div>
+              </Button>
             ))}
           </div>
         )}
