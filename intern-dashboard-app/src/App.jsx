@@ -25,6 +25,7 @@ import ExitInterview       from "./pages/ExitInterview";
 // Integrated platform pages
 import EventStream         from "./pages/EventStream";
 import Attendance          from "./pages/Attendance";
+import Surveys             from "./pages/Surveys";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
           {/* Integrated platform pages */}
           <Route path="/events"         element={<EventStream />} />
           <Route path="/attendance"      element={<Attendance />} />
+          <Route path="/surveys"         element={<Surveys />} />
 
           {/* Employee Lifecycle routes */}
           <Route path="/lifecycle"                element={<LifecycleHub />} />

@@ -10,6 +10,7 @@ const Sidebar = () => {
     { to: "/compare",    label: "Compare Interns",  icon: "⚖️"  },
     { to: "/assessment", label: "New Assessment",   icon: "📝" },
     { to: "/attendance", label: "Attendance",        icon: "📅" },
+    { to: "/surveys",    label: "Surveys",          icon: "🗳️" },
     { to: "/events",     label: "Event Stream",     icon: "⚡" },
   ];
 
